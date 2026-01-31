@@ -157,7 +157,9 @@ const NewArrivals = () => {
           your wardrobe on the cutting edge of fashion.
         </p>
         {/* scroll buttons  */}
+
         <div className="absolute right-0 bottom-[-30px] flex space-x-2 ">
+          {/* left button  */}
           <button
             onClick={() => scroll("left")}
             disabled={!canScrollLeft}
@@ -169,6 +171,7 @@ const NewArrivals = () => {
           >
             <FiChevronLeft className="text-2xl" />
           </button>
+          {/* right button */}
           <button
             onClick={() => scroll("right")}
             className={`p-2 rounded border ${
@@ -204,7 +207,7 @@ const NewArrivals = () => {
               draggable={false}
             />
             <div className="absolute bottom-0 left-0 right-0 bg-opacity-50 backdrop-blur-md text-white p-4 rounded-b-lg">
-              <Link to={`/products/${product._id}`}>
+              <Link to={`/product/${product._id}`}>
                 <h4 className="font-medium">{product.name}</h4>
                 <p className="mt-1">${product.price}</p>
               </Link>

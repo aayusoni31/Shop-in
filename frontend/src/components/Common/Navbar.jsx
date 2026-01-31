@@ -24,14 +24,14 @@ const Navbar = () => {
       <nav className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* lefty-logo  */}
         <div>
-          <Link to="#" className="text-2x font-medium">
+          <Link to="#" className="text-2xl font-medium">
             Rabbit
           </Link>
         </div>
         {/* center navigation links  */}
         <div className="hidden md:flex space-x-6">
           <Link
-            to="#"
+            to="/collections/all"
             className="text-gray-700 hover:text-black text-sm font-medium uppercase"
           >
             Men
@@ -78,6 +78,7 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
+
       <CartDrawer drawerOpen={drawerOpen} toggleCartDrawer={toggleCartDrawer} />
       {/* mobile navigation drawer  */}
       <div
