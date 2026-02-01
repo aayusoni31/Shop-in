@@ -12,6 +12,8 @@ import CollectionPage from "./pages/CollectionPage";
 import ProductDetails from "./components/Products/ProductDetails";
 import OrderConfirmationPage from "./pages/OrderConfirmationPage";
 import Checkout from "./components/Cart/Checkout";
+import OrderDetailsPage from "./pages/OrderDetailsPage";
+import MyOrdersPage from "./pages/MyOrdersPage";
 const App = () => {
   return (
     <BrowserRouter>
@@ -29,6 +31,8 @@ const App = () => {
             path="order-confirmation"
             element={<OrderConfirmationPage />}
           />
+          <Route path="order/:id" element={<OrderDetailsPage />} />
+          <Route path="my-orders" element={<MyOrdersPage />} />
         </Route>
         <Route>{/* Admin layout */}</Route>
       </Routes>
