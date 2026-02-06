@@ -25,7 +25,7 @@ const Navbar = () => {
         {/* lefty-logo  */}
         <div>
           <Link to="#" className="text-2xl font-medium">
-            Rabbit
+            Shopify
           </Link>
         </div>
         {/* center navigation links  */}
