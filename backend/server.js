@@ -22,4 +22,3 @@ app.use("/api/users", userRoutes);
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
-// 7:26:36 timeee
