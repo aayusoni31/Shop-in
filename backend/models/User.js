@@ -28,7 +28,7 @@ const userSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
-// password hash middleware -- executed before save operation
+// password hash middleware -- executed before save operation in db
 
 userSchema.pre("save", async function () {
   if (!this.isModified("password")) return;
